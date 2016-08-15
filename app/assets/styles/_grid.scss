@@ -1,0 +1,132 @@
+@import 'jeet/jeet';
+
+/* Font smoothing
+   ========================================================================== */
+
+/**
+ * Antialiased font smoothing works best for light text on a dark background.
+ * Apply to single elements instead of globally to body.
+ * Note this only applies to webkit-based desktop browsers and Firefox 25 (and later) on the Mac.
+ */
+
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Truncated text
+   ========================================================================== */
+
+.truncated {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Clearfix
+   ========================================================================== */
+
+.clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
+/*
+* getting the grid sorted
+------------------------------------*/
+
+
+
+
+.wrapper {@include center(1100px);}
+@include media(xsmall-only) {
+  .wrapper {padding-left:20px; padding-right:20px;}
+}
+
+
+.col1    {@include span(1/12);}
+.col2    {@include span(2/12);}
+.col3    {@include span(3/12);}
+.col4    {@include span(4/12);}
+.col5    {@include span(5/12);}
+.col6    {@include span(6/12);}
+.col7    {@include span(7/12);}
+.col8    {@include span(8/12);}
+.col9    {@include span(9/12);}
+.col10   {@include span(10/12);}
+.col11   {@include span(10/12);}
+.col12   {@include span(12/12);}
+
+@include media(xsmall-only) {
+	[class*="col"] {
+		width: 100%;
+		max-width: 100%;
+	}
+};
+
+
+@include media(small-up) {display: block;};
+@include media(medium-up) {display: block;};
+@include media(large-up) {display: block;};
+
+// @media only screen and (max-width:640px) {
+// 	.col1, .col2, .col3, .col4, .col5, 
+// 	.col6, .col7, .col8, .col9, .col10, .col11, 
+// 	.col12 {
+// 		width: 100%;
+// 		max-width: 100%;
+// 	}
+// }
+
+
+
+/*
+ * Padding
+---------------------------------------------- */
+
+.p1 {padding: 10px}
+.p2 {padding: 20px}
+.p3 {padding: 30px}
+.p4 {padding: 40px}
+
+.p1y {padding-top:10px; padding-bottom: 10px;}
+.p2y {padding-top:20px; padding-bottom: 20px;}
+.p3y {padding-top:30px; padding-bottom: 30px;}
+.p4y {padding-top:40px; padding-bottom: 40px;}
+.p6y {padding-top:60px; padding-bottom: 60px;}
+.p8y {padding-top:80px; padding-bottom: 80px;}
+
+.p1x {padding-right:10px; padding-left: 10px;}
+.p2x {padding-right:20px; padding-left: 20px;}
+.p3x {padding-right:30px; padding-left: 30px;}
+.p4x {padding-right:40px; padding-left: 40px;}
+.p6x {padding-right:60px; padding-left: 60px;}
+.p8x {padding-right:80px; padding-left: 80px;}
+
+/*
+ * margins
+---------------------------------------------- */
+
+.m1x {margin-bottom: 10px;}
+.m2x {margin-bottom: 20px;}
+.m3x {margin-bottom: 30px;}
+.m4x {margin-bottom: 40px;}
+
+.m1 {margin-left: 8.3333333333%;}
+.m2 {margin-left: 16.6666666667%;}
+.m3 {margin-left: 25%;}
+.m4 {margin-left: 33.3333333333%;}
+
+@include media(xsmall-only) {
+    .m1, .m2, .m3, .m4 {
+    margin-left: 0;
+  }
+}
+

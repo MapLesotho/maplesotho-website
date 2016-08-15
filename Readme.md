@@ -1,0 +1,1 @@
+This structure and setup of this initital repo has been heavily based on the following from DevelepmentSeed, MissingMaps and HotOSM: [developmentseed/project-seed](https://github.com/developmentseed/project-seed) [MissingMaps/missingmaps.github.io](https://github.com/MissingMaps/missingmaps.github.io)

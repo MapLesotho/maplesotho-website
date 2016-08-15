@@ -1,0 +1,14 @@
+title: MapLesotho
+safe:           false
+source:         app
+exclude:
+  - assets/scripts
+  - assets/vendor
+  - assets/styles
+  - README.md
+timezone: Europe/Dublin
+highlighter: false
+
+baseurl: ""
+
+permalink: pretty
