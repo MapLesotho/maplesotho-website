@@ -85,6 +85,10 @@ gulp.task('styles', function () {
 // --------------------------- Jekyll tasks -----------------------------------//
 // ----------------------------------------------------------------------------//
 var environment = 'development';
+gulp.task('prod', function(done) {
+  environment = 'production';
+  runSequence('clean', 'build', done);
+});
 
 // Build the jekyll website.
 gulp.task('jekyll', function (done) {
