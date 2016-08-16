@@ -8,15 +8,14 @@ env:
   - DEPLOY_BRANCH=gh-pages
   - secure: "JSTeKM1/ToPNDm9+zPv1sqnKV2RW3e71eK9OWuNd5GikYbAddPxyxgTCkoCim0sCyOv4NxdonIuAc90nqN2rcE8VY2E7tr7QbrbsIXwTqA/txU54O+FNypKLFXXo6Zu9dwM+tFUodXlb2gEe+PqlfhXNw/rRdRzdm8Wbb+5kSZtTy9LWFS/oNbpuFmjY4Urzp3imgSEJctIE3XaSj9T2Rp0sBhU4Sl8UjWhA4fvaFinNREtUZrPWzooRx2G/KuMKY+++eWATf+wQ6P+PxN7SvESASKTT7iWB+FEkriAQlUSmAb1fCXizMFZmbdMS3cXvPcue1OuYNSSAPBv4kgsP96MjbmyA/yzJYoL+zfwhjwzacnv5hLqIui4fYdA79g7lfQ4LJJ+jmFEXop1cl9aoVrwdpDqPYwnvuJniFSZQ6OMLDIr3UJjwkvDdxVcuFz71Md/QRG40HVYxf79kCRJpUTTU9rx15kqxOvne7B1N+8Ka/jUfJp0B19d3NAj+ms/cMIZHJeC3bN1byP9LMDXEwJo5GjSWhOIx+4VA5ADF9tKK9yHKuxJHTGBBbQgt1NS3KxSnAKTUqLbhFLS2ZlrxZl7qM3zyFLn22MXVhRUw0vo2px/d+itonQEzw9pD//ehlto6M8i9qiBDtpIu1ZN2kNQsQKkAhJc1IVqj3ZLLSCg="
 
-before_install:
-  - rvm install 2.2.2
-
 cache:
   directories:
     - node_modules
 
 before_install:
 - chmod +x ./.build_scripts/deploy.sh
+- rvm install 2.2
+- rvm use 2.2
 
 script:
 - gulp prod
