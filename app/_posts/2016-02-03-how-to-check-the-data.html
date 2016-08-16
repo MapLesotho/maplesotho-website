@@ -1,0 +1,67 @@
+---
+layout: post
+title: How to check the data
+date: 2016-02-03 19:49:49.000000000 +01:00
+type: post
+published: true
+status: publish
+categories: []
+tags: []
+meta:
+  _oembed_6de8d8757b7422a97f7de741482380c1: "{{unknown}}"
+  _rest_api_published: '1'
+  _rest_api_client_id: "-1"
+  _publicize_job_id: '19433376325'
+  _publicize_done_external: a:1:{s:7:"twitter";a:1:{i:13074982;s:60:"https://twitter.com/CiaranStaunton/status/694971075906523136";}}
+  _publicize_done_13100138: '1'
+  _wpas_done_13074982: '1'
+  publicize_twitter_user: CiaranStaunton
+  _oembed_9fcbcd5a87704c7224dae627ab44ecc4: <div class="embed-twitter"><blockquote
+    class="twitter-tweet" data-width="500"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/MapLesotho?src=hash">#MapLesotho</a>
+    three beardies touching down in <a href="https://twitter.com/hashtag/MSU?src=hash">#MSU</a>
+    w. <a href="https://twitter.com/CiaranStaunton">@CiaranStaunton</a> <a href="https://twitter.com/DaCor_ie">@DaCor_ie</a>
+    <a href="https://t.co/mAtyfvLDFn">pic.twitter.com/mAtyfvLDFn</a></p>&mdash; Colin
+    Broderick (@rusty1052) <a href="https://twitter.com/rusty1052/status/696008446198616064">February
+    6, 2016</a></blockquote><script async src="//platform.twitter.com/widgets.js"
+    charset="utf-8"></script></div>
+  _oembed_time_9fcbcd5a87704c7224dae627ab44ecc4: '1454849687'
+author:
+  login: geofrizz
+  email: geofrizz@gmail.com
+  display_name: geofrizz
+  first_name: ''
+  last_name: ''
+---
+<p>This is an important step for establishing if all the editing and tagging is orthodox, and also if these data are standard, or variations are occurring with tagging in particular.</p>
+<p>There are more tools on-line that can enable various types of checks. However, I like the use of tools directly on my computer and also in local is possible to use different methods; the more simple is the use of the compress file with extension ".pbf" that contains all the data of OSM with the extract tool "osmosis".</p>
+<p>Every object in the map present one or more tags <span id="result_box" class="short_text" lang="en"><span class="hps">consisting</span> <span class="hps">of two parts</span></span> one "key" with the <span id="result_box" class="short_text" lang="en"><span class="hps">corresponding</span></span> "value" example "building=yes", "building" is the key and "yes" is the value.<br />
+From the data file is possible extract  a group of objects with the same tag, for example all the objects tagged as "building", or indeed it is also possible to extract all the object with a specific kind of building ex. "building=house". The output will be a file that can be read directly by the JOSM editor.</p>
+<p>The first question is: "Where is possible to find the file with data ??". GeoFabrik's site in the folder download/africa <a href="http://download.geofabrik.de/africa/lesotho.html" target="_blank">Lesotho</a> makes it possible to find every day an updated file with all the data of #MapLesotho. <img class="alignnone size-full wp-image-1159" src="{{ site.baseurl }}/assets/geofabrik_-_2016-02-02_22-42-23.png" alt="GeoFabrik_-_2016-02-02_22.42.23" width="853" height="856" /><br />
+About osmosis it's possible to find information on <a href="http://wiki.openstreetmap.org/wiki/Osmosis" target="_blank">OSM wiki</a> and also the link for the download; it's written in java and can work in different operating systems. The command can be executed in a "terminal" windows.</p>
+<p>The syntax is simple:</p>
+<pre>/path/where/is/command/osmosis-latest/bin/osmosis \
+--read-pbf file=/path/where/is/data/lesotho-latest.osm.pbf \
+--tag-filter accept-ways building=house \
+--used-node \
+--write-xml file="/path/where/put/output/osmosis_buildings_house_pbf.osm"
+</pre>
+<p>This command export all the data with the tag "building=house" in the bounding box that contains the country of Lesotho; it's possible to limit the area with a different extension of a bounding box or with a polygon. For a bounding box the command must change to:</p>
+<pre>/path/where/is/command/osmosis-latest/bin/osmosis \
+--read-pbf file=/path/where/is/data/lesotho-latest.osm.pbf \
+--bounding-box left="28.00000" right="29.0000" top="-29.00000" bottom="-30.0000" \
+--tag-filter accept-ways building=house \
+--used-node \
+--write-xml file="/path/where/put/output/osmosis_buildings_house_bbox_pbf.osm"
+</pre>
+<p>Where left, right, top and bottom are the coordinates of edges of the bounding box.<br />
+For the polygon it's possible, for example, to find and download the border of each district on-line <a href="https://osm.wno-edv-service.de/boundaries/" target="_blank">osm.wno-edv-service.de</a> <img class="alignnone size-full wp-image-1202" src="{{ site.baseurl }}/assets/osm_boundaries_3-7_-_2016-02-02_23-54-05.png" alt="OSM_Boundaries_3.7_-_2016-02-02_23.54.05" width="1216" height="842" />The command change in:</p>
+<pre>/path/where/is/command/osmosis-latest/bin/osmosis \
+--read-pbf file=/path/where/is/data/lesotho-latest.osm.pbf \
+--bounding-polygon file="/path/where/is/polygon/Mafeteng District.poly" \
+--tag-filter accept-ways building=house \
+--used-node \
+--write-xml file="/path/where/put/output/osmosis_buildings_house_Mafeteng_pbf.osm"
+</pre>
+<p>Now it's possible to open the output file with JOSM and correct/modify/add tags and/or object.</p>
+<p>This method allow to quickly correct any systematic errors that one or more mapper have entered but not any blunder <span id="result_box" class="short_text" lang="en"><span class="hps">such as for example</span></span> a <span id="result_box" class="short_text" lang="en"><span class="hps">misspelling</span></span> for the key (ex. bulding and not building) for which, I think, the best choice is the use of a database that allows more flexibility for search not only values but also the keys.<b></b></p>
+<p>This is a useful tool that fits well with the strategy we are following to #MapLesotho. As many standard building tags as possible allow us to set local tagging protocols and further define the buildings using field papers and mapillary for example.</p>

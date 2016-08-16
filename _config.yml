@@ -9,6 +9,13 @@ exclude:
 timezone: Europe/Dublin
 highlighter: false
 
-baseurl: ""
+baseurl: "/maplesotho-website"
 
 permalink: pretty
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      psection: "Blog"

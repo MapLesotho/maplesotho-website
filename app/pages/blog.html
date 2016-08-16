@@ -1,0 +1,17 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+---
+
+<div class="wrapper clearfix p8y">
+
+{% for post in site.posts %}
+<div class="pad2 line-bottom col8">
+		<a href="{{site.baseurl}}{{post.url}}"><h2>{{post.title}}</h2></a>
+		<p><span class="meta">{{post.date | date_to_long_string  }}</span> | by <strong>{{post.author.display_name}}</strong></p>
+		<p>{{ post.excerpt | strip_html | strip_newlines | truncate: 300 }}</p>
+	</div>
+{% endfor %}
+	
+</div>	
