@@ -91,3 +91,13 @@ img {vertical-align: top;}
   }
 }
 
+
+// next and previous links
+
+a.prev, a.next, a.all {
+    padding: 10px;
+    background: #ccc;
+    border-radius: 20px;
+    display: inline-block;
+}
+

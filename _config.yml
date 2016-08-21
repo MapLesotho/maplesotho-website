@@ -19,3 +19,4 @@ defaults:
       type: "posts"
     values:
       psection: "Blog"
+      permalink: /blog/:year/:month/:day/:title/

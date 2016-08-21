@@ -68,9 +68,9 @@
   <div class="p2y fill-lightgrey">
   	<div class="wrapper center">
   		<h1 class="page__title">
-              <a href="/" title="Visit homepage">
+              <a href="{{site.baseurl}}{% if page.phome %}{{page.phome}}{% endif %}" title="Visit homepage">
                 <span class="mast-logo mast-logo--h">
-                  <img src="{{site.baseurl}}//assets/graphics/layout/maplesotho-logo-pos.svg" alt="#MapLesotho logo" class="mast-logo__image" style="max-width: 180px;" />
+                  <img src="{{site.baseurl}}/assets/graphics/layout/maplesotho-logo-pos.svg" alt="#MapLesotho logo" class="mast-logo__image" style="max-width: 180px;" />
                   <!-- <strong class="mast-logo__text">MapLesotho</strong> -->
                   <small class="mast-logo__label">{{ page.psection }}</small>
                 </span>

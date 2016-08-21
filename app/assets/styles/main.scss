@@ -2,20 +2,20 @@
 
 @charset "UTF-8";
 
+// normalise everything
+@import "normalise";
+@import "reset";
 
 
+// plugins and mixins
 @import "bourbon";
-// @import 'jeet/index';
-
 @import	"variables";
 @import "functions";
 @import "mixins";
 
-@import "normalise";
-@import "reset";
 
-@import "util";
-
+// base styles
 @import "base";
 @import "typography";
 @import "grid";
+@import "util";

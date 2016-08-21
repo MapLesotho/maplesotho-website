@@ -6,12 +6,17 @@ html {
   box-sizing: border-box;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
+// *,
+// *::before,
+// *::after {
+//   box-sizing: inherit;
+// }
 
+*, *:after, *:before {
+  -webkit-box-sizing:border-box;
+     -moz-box-sizing:border-box;
+          box-sizing:border-box;
+  }
 /* Make viewport responsive on every browser */
 
 @at-root {
@@ -99,3 +104,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+img {
+  max-width:100%;
+  vertical-align:top;
+  }
+.center img,
+img.center { margin-left:auto; margin-right:auto; }

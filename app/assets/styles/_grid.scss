@@ -51,17 +51,17 @@
 }
 
 
-.col1    {@include span(1/12);}
-.col2    {@include span(2/12);}
-.col3    {@include span(3/12);}
-.col4    {@include span(4/12);}
-.col5    {@include span(5/12);}
-.col6    {@include span(6/12);}
-.col7    {@include span(7/12);}
-.col8    {@include span(8/12);}
-.col9    {@include span(9/12);}
-.col10   {@include span(10/12);}
-.col11   {@include span(10/12);}
+.col1    {@include span(1/12); max-width: 100px;}
+.col2    {@include span(2/12); max-width: 200px;}
+.col3    {@include span(3/12); max-width: 300px;}
+.col4    {@include span(4/12); max-width: 400px;}
+.col5    {@include span(5/12); max-width: 500px;}
+.col6    {@include span(6/12); max-width: 600px;}
+.col7    {@include span(7/12); max-width: 700px;}
+.col8    {@include span(8/12); max-width: 800px;}
+.col9    {@include span(9/12); max-width: 900px;}
+.col10   {@include span(10/12); max-width: 1000px;}
+.col11   {@include span(10/12); max-width: 1100px;}
 .col12   {@include span(12/12);}
 
 @include media(xsmall-only) {
@@ -95,6 +95,7 @@
 .p2 {padding: 20px}
 .p3 {padding: 30px}
 .p4 {padding: 40px}
+.p8 {padding: 80px;}
 
 .p1y {padding-top:10px; padding-bottom: 10px;}
 .p2y {padding-top:20px; padding-bottom: 20px;}
@@ -113,7 +114,7 @@
 /*
  * margins
 ---------------------------------------------- */
-
+.space-top1 {margin-top: 10px;}
 .m1x {margin-bottom: 10px;}
 .m2x {margin-bottom: 20px;}
 .m3x {margin-bottom: 30px;}

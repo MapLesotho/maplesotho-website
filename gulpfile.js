@@ -92,7 +92,7 @@ gulp.task('jekyll', function (done) {
 
   switch (environment) {
     case 'development':
-      args.push('--config=_config.yml');
+      args.push('--config=_config-dev.yml');
       // args.push('--config=_config.yml,_config-dev.yml');
     break;
     case 'stage':

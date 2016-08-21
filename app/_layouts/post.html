@@ -5,9 +5,21 @@ layout: default
 <div class="wrapper clearfix">
 	<div class="p8">
 		<h2>{{page.title}}</h2>
-		<p><small>{{page.date | date_to_long_string  }}</small></p>	
+		<p><small>{{page.date | date_to_long_string  }}</small> | <strong>{{page.author}}</strong></p>	
 		<div class="pad2y line-top">
 			{{content}}
 		</div>
 	</div>
+</div>
+
+<div class="wrapper center p8x p4y">
+	
+	<a class="all" href="{{page.previous.url}}"><img style="max-width: 20px;" src="{{site.baseurl}}/assets/icons/list.svg"> All</a>
+  {% if page.previous.url %}
+    <a class="prev" href="{{page.previous.url}}"><img style="max-width: 20px;" src="{{site.baseurl}}/assets/icons/arrow-left.svg"> Next</a>
+  {% endif %}
+  {% if page.next.url %}
+    <a class="next" href="{{page.next.url}}"><img style="max-width: 20px;" src="{{site.baseurl}}/assets/icons/arrow-right.svg"> Prev</a>
+  {% endif %}
+
 </div>
