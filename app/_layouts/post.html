@@ -6,7 +6,7 @@ layout: default
 	<div class="p8">
 		<h2>{{page.title}}</h2>
 		<p><small>{{page.date | date_to_long_string  }}</small> | <strong>{{page.author}}</strong></p>	
-		<div class="pad2y line-top">
+		<div class="space-top2 p2y line-top">
 			{{content}}
 		</div>
 	</div>
@@ -14,12 +14,12 @@ layout: default
 
 <div class="wrapper center p8x p4y">
 	
-	<a class="all" href="{{page.previous.url}}"><img style="max-width: 20px;" src="{{site.baseurl}}/assets/icons/list.svg"> All</a>
+	<a class="all" href="{{site.baseurl}}{{page.previous.url}}"><img style="max-width: 20px;" src="{{site.baseurl}}/assets/icons/list.svg"> All</a>
   {% if page.previous.url %}
-    <a class="prev" href="{{page.previous.url}}"><img style="max-width: 20px;" src="{{site.baseurl}}/assets/icons/arrow-left.svg"> Next</a>
+    <a class="prev" href="{{site.baseurl}}{{page.previous.url}}"><img style="max-width: 20px;" src="{{site.baseurl}}/assets/icons/arrow-left.svg"> Next</a>
   {% endif %}
   {% if page.next.url %}
-    <a class="next" href="{{page.next.url}}"><img style="max-width: 20px;" src="{{site.baseurl}}/assets/icons/arrow-right.svg"> Prev</a>
+    <a class="next" href="{{site.baseurl}}{{page.next.url}}"><img style="max-width: 20px;" src="{{site.baseurl}}/assets/icons/arrow-right.svg"> Prev</a>
   {% endif %}
 
 </div>
