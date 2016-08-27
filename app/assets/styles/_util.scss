@@ -2,8 +2,31 @@ $grey: #e6e6e6;
 
 img {vertical-align: top;}
 
+$green-blue: #4ea0aa; // green-blue-
+$green: #63978a; // green
+$cream: #e8e4d1;
+$purple: #473050;
+$blue: #1c3968;
+$dark-grey: #666868;
+$orange: #e65c25;
+$red: #ce202c;
+$brown: #301710;
+$light-grey: #e9e9ea;
+
+.fill-green-blue {background-color: $green-blue;}
+.fill-green {background-color: $green;}
+.fill-cream {background-color: $cream;}
+.fill-purple {background-color: $purple;}
+.fill-blue {background-color: $blue;}
+.fill-dark-grey {background-color: $dark-grey;}
+.fill-orange {background-color: $orange;}
+.fill-red {background-color: $red;}
+.fill-brown {background-color: $brown ;}
+
 .fill-lightgrey {background-color: #f6f6f6;}
 .fill-grey {background-color: #e6e6e6;}
+
+.dark {color: #fff;}
 
 /* Disabled
    ========================================================================== */

@@ -10,7 +10,7 @@ timezone: Europe/Dublin
 highlighter: false
 
 baseurl: ""
-siteurl: "http://dash.maplesotho.com"
+siteurl: "http://www.maplesotho.com"
 
 permalink: pretty
 defaults:
