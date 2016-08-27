@@ -5,6 +5,14 @@ img {vertical-align: top;}
 .fill-lightgrey {background-color: #f6f6f6;}
 .fill-grey {background-color: #e6e6e6;}
 
+/* Disabled
+   ========================================================================== */
+
+.disabled {
+  opacity: 0.48;
+  pointer-events: none;
+  cursor: not-allowed;
+}
 
 /* Util
    ========================================================================== */
@@ -93,11 +101,47 @@ img {vertical-align: top;}
 
 
 // next and previous links
+.icon {
+  &.twitter {
+    &:before {
+      margin-right: 0.25rem;
+      @extend %oam-ds-icon-twitter;
+    }
+  }
 
-a.prev, a.next, a.all {
-    padding: 10px;
-    background: #ccc;
-    border-radius: 20px;
-    display: inline-block;
+  &.facebook {
+    &:before {
+      margin-right: 0.25rem;
+      @extend %oam-ds-icon-facebook;
+    }
+  }
+
+  &.prev {
+    &:before {
+      margin-right: 0.25rem;
+      @extend %oam-ds-icon-sm-chevron-left;
+    }
+  }
+
+  &.next {
+    &:after {
+      margin-right: 0.25rem;
+      @extend %oam-ds-icon-sm-chevron-right;
+    }
+  }
+
+  &.all {
+    &:before {
+      margin-right: 0.25rem;
+      @extend %oam-ds-icon-list;
+    }
+  }
 }
 
+
+a.prev, a.next, a.all, a.facebook, a.twitter {
+    padding: 10px;
+    border-radius: 20px;
+    display: inline-block;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.08);
+}

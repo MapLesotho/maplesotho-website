@@ -25,18 +25,20 @@ And the wonderful news is that they scooped the [Sustainable Development Goal 11
 
 What better way to relate the experience of these awards than to talk to hear the reaction of the students themselves shortly after winning.
 
-Colin:
+
 
 > The best part for me was meeting all the other teams. I feel happy that all of these countries have social responsibility and social enterprise as their vision for the future. I’ve made friends for life and am helping to change the world.
+> <footer><cite>Colin</cite></footer>
 
-Ravi:
+
 
 > “The experience will be extremely useful to me, as I learned new things and learned a lot about the power of presenting your ideas and work to others . I think it is a skill we will all need.”
+> <footer><cite>Ravi</cite></footer>
 
-Emma:
 
 > The highlight of all this was meeting Ndaba Mandela who is inspiring like his grandfather must have been. You would learn something from everything he says.
+> <footer><cite>Emma</cite></footer>
 
-Anbu:
 
 > We met so many people who defy the stereotypes of their countries, that we ourselves felt at liberty to be ourselves and present our culture in a unique way and strive for our own personal development. 
+> <footer><cite>Anbu</cite></footer>

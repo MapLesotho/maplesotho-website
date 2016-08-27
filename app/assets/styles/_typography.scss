@@ -127,7 +127,7 @@ dd {
    ========================================================================== */
 
 blockquote {
-  box-shadow: inset 1px 0 0 0 $base-alpha-color;
+  box-shadow: inset 5px 0 0 0 $base-alpha-color;
   padding: ($global-spacing / 2) $global-spacing;
   *:last-child {
     margin-bottom: 0;

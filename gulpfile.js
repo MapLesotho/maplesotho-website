@@ -81,6 +81,58 @@ gulp.task('styles', function () {
     // .pipe(reload({stream: true}));
 });
 
+// /////////////////////////////////////////////////////////////////////////////
+// ------------------------ Collecticon tasks --------------------------------//
+// -------------------- (Font generation related) ----------------------------//
+// ---------------------------------------------------------------------------//
+gulp.task('collecticons', function (done) {
+  var args = [
+    'node_modules/collecticons-processor/bin/collecticons.js',
+    'compile',
+    'app/assets/graphics/collecticons/',
+    '--font-embed',
+    '--font-dest', 'app/assets/fonts',
+    '--font-name', 'Collecticons',
+    '--font-types', 'woff',
+    '--style-format', 'sass',
+    '--style-dest', 'app/assets/styles/',
+    '--style-name', 'collecticons',
+    '--class-name', 'collecticons',
+    '--author-name', 'MapLesotho',
+    '--author-url', 'https://maplesotho.com/',
+    '--no-preview'
+  ];
+
+  return cp.spawn('node', args, {stdio: 'inherit'})
+    .on('close', done);
+});
+
+// /////////////////////////////////////////////////////////////////////////////
+// ------------------------- OAM icons tasks ---------------------------------//
+// -------------------- (Font generation related) ----------------------------//
+// ---------------------------------------------------------------------------//
+gulp.task('oam:icons', function (done) {
+  var args = [
+    'node_modules/collecticons-processor/bin/collecticons.js',
+    'compile',
+    'app/assets/icons/',
+    '--font-embed',
+    '--font-dest', 'app/assets/fonts',
+    '--font-name', 'OAM DS Icons',
+    '--font-types', 'woff',
+    '--style-format', 'sass',
+    '--style-dest', 'app/assets/styles',
+    '--style-name', 'oam-ds-icons',
+    '--class-name', 'oam-ds-icon',
+    '--author-name', 'Development Seed',
+    '--author-url', 'https://developmentseed.org/',
+    '--no-preview'
+  ];
+
+  return cp.spawn('node', args, {stdio: 'inherit'})
+    .on('close', done);
+});
+
 // //////////////////////////////////////////////////////////////////////////////
 // --------------------------- Jekyll tasks -----------------------------------//
 // ----------------------------------------------------------------------------//

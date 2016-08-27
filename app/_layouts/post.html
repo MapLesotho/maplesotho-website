@@ -13,13 +13,15 @@ layout: default
 </div>
 
 <div class="wrapper center p8x p4y">
+	<a class="icon twitter" href="https://twitter.com/share?url={{site.siteurl}}{{site.baseurl}}{{page.url}}">Twitter</a>
+
+	<a class="icon facebook" href="http://facebook.com/sharer.php?u={{site.siteurl}}{{site.baseurl}}{{page.url}}">Facebook</a>
 	
-	<a class="all" href="{{site.baseurl}}{{page.previous.url}}"><img style="max-width: 20px;" src="{{site.baseurl}}/assets/icons/list.svg"> All</a>
-  {% if page.previous.url %}
-    <a class="prev" href="{{site.baseurl}}{{page.previous.url}}"><img style="max-width: 20px;" src="{{site.baseurl}}/assets/icons/arrow-left.svg"> Next</a>
-  {% endif %}
-  {% if page.next.url %}
-    <a class="next" href="{{site.baseurl}}{{page.next.url}}"><img style="max-width: 20px;" src="{{site.baseurl}}/assets/icons/arrow-right.svg"> Prev</a>
-  {% endif %}
+	<a class="icon all" href="{{site.baseurl}}{{page.previous.url}}">All</a>
+  
+  <a class="icon prev {% unless page.previous.url %}disabled{% endunless %}" href="{{site.baseurl}}{{page.previous.url}}">Previous</a>
+
+  <a class="icon next {% unless page.next.url %}disabled{% endunless %}" href="{{site.baseurl}}{{page.next.url}}"> Next</a>
+  
 
 </div>
