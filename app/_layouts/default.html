@@ -66,17 +66,31 @@
 
 
   <div class="p2y fill-lightgrey">
-  	<div class="wrapper center">
+  
+  	<div class="wrapper clearfix">
+    <nav>
+      <div class="col4">
   		<h1 class="page__title">
-              <a href="{{site.baseurl}}{% if page.phome %}{{page.phome}}{% endif %}" title="Visit homepage">
-                <span class="mast-logo mast-logo--h">
-                  <img src="{{site.baseurl}}/assets/graphics/layout/maplesotho-logo-pos.svg" alt="#MapLesotho logo" class="mast-logo__image" style="max-width: 180px;" />
-                  <!-- <strong class="mast-logo__text">MapLesotho</strong> -->
-                  <small class="mast-logo__label">{{ page.psection }}</small>
-                </span>
-              </a>
-            </h1>    
+        <a href="{{site.baseurl}}{% if page.phome %}{{page.phome}}{% endif %}" title="Visit homepage">
+          <span class="mast-logo mast-logo--h">
+            <img src="{{site.baseurl}}/assets/graphics/layout/maplesotho-logo-pos.svg" alt="#MapLesotho logo" class="mast-logo__image" style="max-width: 180px;" />
+            <!-- <strong class="mast-logo__text">MapLesotho</strong> -->
+            <small class="mast-logo__label">{{ page.psection }}</small>
+          </span>
+        </a>
+      </h1>   
+      </div> 
+      <div class="col8">
+        <ul class="global-menu text-right">
+          <li><a class="global-menu-item" href="{{site.baseurl}}/about">About</a></li>
+          <li><a class="global-menu-item" href="{{site.baseurl}}/blog">Blog</a></li>
+          <li><a class="global-menu-item" href="{{site.baseurl}}/videos">Videos</a></li>
+          <li><a class="global-menu-item" href="{{site.baseurl}}/weekly">Weekly</a></li>
+        </ul>
+      </div>
+      </nav>
   	</div>
+  
   </div>
 
   {{ content }}

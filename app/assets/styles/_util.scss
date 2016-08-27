@@ -17,6 +17,7 @@ img {vertical-align: top;}
 /* Util
    ========================================================================== */
 .center {text-align: center;}
+.text-right {text-align: right;}
 
 .line-top {border-top: 1px solid $grey;}
 .line-bottom {border-bottom: 1px solid $grey;}
@@ -139,9 +140,34 @@ img {vertical-align: top;}
 }
 
 
-a.prev, a.next, a.all, a.facebook, a.twitter {
+.post-actions > a {
     padding: 10px;
     border-radius: 20px;
     display: inline-block;
     box-shadow: inset 0 0 0 1px rgba(0,0,0,0.08);
+}
+
+
+.global-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.global-menu>li {
+    display: inline-block;
+    margin: 0 .5rem 0 0;
+}
+
+.global-menu-item {
+    display: block;
+    line-height: 2rem;
+    font-size: 1rem;
+    padding: 0 .5rem;
+    border-radius: .25rem;
+    color: #314b54;
+    font-weight: 700;
+}
+.page__title {
+  margin:0;
 }
