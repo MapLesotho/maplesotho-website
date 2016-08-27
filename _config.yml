@@ -9,7 +9,7 @@ exclude:
 timezone: Europe/Dublin
 highlighter: false
 
-baseurl: "/maplesotho-website"
+baseurl: ""
 siteurl: "http://dash.maplesotho.com"
 
 permalink: pretty
