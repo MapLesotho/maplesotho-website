@@ -18,7 +18,7 @@ before_install:
 - rvm use 2.2
 
 script:
-- gulp prod
+- npm run build
 
 after_success:
 - ./.build_scripts/deploy.sh

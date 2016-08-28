@@ -21,7 +21,8 @@
     "oam-icons": "gulp oam:icons",
     "lint": "eslint sandbox/assets/scripts/ assets/scripts --ext .js",
     "test": "echo \"No tests\" && exit 0",
-    "install": "bundle install --path bundle/cache"
+    "install": "bundle install --path bundle/cache",
+    "build": "NODE_ENV=production gulp"
   },
   "browserify": {
     "transform": [

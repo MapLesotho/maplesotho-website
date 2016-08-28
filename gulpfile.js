@@ -217,7 +217,7 @@ gulp.task('prod', function(done) {
 gulp.task('jekyll', function (done) {
   var args = ['exec', 'jekyll', 'build'];
 
-  switch (environment) {
+  switch (process.NODE_ENV) {
     case 'development':
       args.push('--config=_config-dev.yml');
       // args.push('--config=_config.yml,_config-dev.yml');
