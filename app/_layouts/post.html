@@ -25,3 +25,17 @@ layout: default
   
 
 </div>
+
+<script type="text/javascript" src="{{site.baseurl}}/assets/scripts/jquery.simulate.min.js"></script>
+<script type="text/javascript">
+$(document.documentElement).keyup(function (e) {
+  if (e.keyCode == 39)
+  {
+    $( "a.home-next,li.next a,a.next" ).simulate( "click" );
+  }
+  if (e.keyCode == 37)
+  {
+    $( "a.home-prev,li.prev a,a.prev" ).simulate( "click" );
+  }
+});
+</script>

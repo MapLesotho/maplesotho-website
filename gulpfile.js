@@ -10,9 +10,14 @@ var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
 var sourcemaps = require('gulp-sourcemaps');
+var exit = require('gulp-exit');
 var gutil = require('gulp-util');
 var notifier = require('node-notifier');
 var cp = require('child_process');
+var YAML = require('yamljs');
+
+var rev = require('gulp-rev');
+var revReplace = require('gulp-rev-replace');
 
 // /////////////////////////////////////////////////////////////////////////////
 // --------------------------- Variables -------------------------------------//
@@ -30,6 +35,7 @@ function readPackage () {
 }
 readPackage();
 
+var prodBuild = false;
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 //-------------------------- Helper tasks ------------------------------------//
@@ -133,6 +139,71 @@ gulp.task('oam:icons', function (done) {
     .on('close', done);
 });
 
+
+// Compiles the user's script files to bundle.js.
+// When including the file in the index.html we need to refer to bundle.js not
+// main.js
+gulp.task('javascript', function () {
+  var watcher = watchify(browserify({
+    entries: ['./app/assets/scripts/main.js'],
+    debug: true,
+    cache: {},
+    packageCache: {},
+    fullPaths: true
+  }));
+
+  function bundler () {
+    if (pkg.dependencies) {
+      watcher.external(Object.keys(pkg.dependencies));
+    }
+    return watcher.bundle()
+      .on('error', function (e) {
+        notifier.notify({
+          title: 'Oops! Browserify errored:',
+          message: e.message
+        });
+        console.log('Javascript error:', e);
+        if (prodBuild) {
+          process.exit(1);
+        }
+        // Allows the watch to continue.
+        this.emit('end');
+      })
+      .pipe(source('bundle.js'))
+      .pipe(buffer())
+      // Source maps.
+      .pipe(sourcemaps.init({loadMaps: true}))
+      .pipe(sourcemaps.write('./'))
+      .pipe(gulp.dest('.tmp/assets/scripts'))
+      // .pipe(reload({stream: true}));
+  }
+
+  watcher
+  .on('log', gutil.log)
+  .on('update', bundler);
+
+  return bundler();
+});
+
+// Vendor scripts. Basically all the dependencies in the package.js.
+// Therefore be careful and keep the dependencies clean.
+gulp.task('vendorScripts', function () {
+  // Ensure package is updated.
+  readPackage();
+  var vb = browserify({
+    debug: true,
+    require: pkg.dependencies ? Object.keys(pkg.dependencies) : []
+  });
+  return vb.bundle()
+    .on('error', gutil.log.bind(gutil, 'Browserify Error'))
+    .pipe(source('vendor.js'))
+    .pipe(buffer())
+    .pipe(sourcemaps.init({loadMaps: true}))
+    .pipe(sourcemaps.write('./'))
+    .pipe(gulp.dest('.tmp/assets/scripts'))
+    // .pipe(reload({stream: true}));
+});
+
 // //////////////////////////////////////////////////////////////////////////////
 // --------------------------- Jekyll tasks -----------------------------------//
 // ----------------------------------------------------------------------------//
@@ -200,3 +271,32 @@ function browserReload() {
     browserSync.reload();
   }
 }
+
+
+// After being rendered by jekyll process the html files. (merge css files, etc)
+gulp.task('html', function () {
+  var jkConf = YAML.load('_config.yml');
+  return gulp.src('_site/**/*.html')
+    .pipe($.useref({searchPath: ['.tmp', 'app', '.']}))
+    .pipe($.if('*.js', $.uglify()))
+    .pipe($.if('*.css', $.csso()))
+    .pipe($.if(/\.(css|js)$/, rev()))
+    .pipe(revReplace({prefix: jkConf.baseurl}))
+    .pipe(gulp.dest('_site'));
+});
+
+
+gulp.task('default', ['clean'], function () {
+  prodBuild = true;
+  gulp.start('build');
+});
+
+gulp.task('build', function () {
+  gulp.start(['vendorScripts', 'oam:icons', 'javascript', 'styles', 'jekyll'], function () {
+    gulp.start(['html'], function () {
+      return gulp.src('_site/**/*')
+        .pipe($.size({title: 'build', gzip: true}))
+        .pipe(exit());
+    });
+  });
+});
