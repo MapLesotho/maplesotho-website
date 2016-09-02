@@ -18,6 +18,7 @@ var YAML = require('yamljs');
 
 var rev = require('gulp-rev');
 var revReplace = require('gulp-rev-replace');
+var reload = browserSync.reload;
 
 // /////////////////////////////////////////////////////////////////////////////
 // --------------------------- Variables -------------------------------------//
@@ -84,7 +85,7 @@ gulp.task('styles', function () {
     }))
     .pipe($.sourcemaps.write())
     .pipe(gulp.dest('.tmp/assets/styles'))
-    // .pipe(reload({stream: true}));
+    .pipe(reload({stream: true}));
 });
 
 // /////////////////////////////////////////////////////////////////////////////
@@ -175,7 +176,7 @@ gulp.task('javascript', function () {
       .pipe(sourcemaps.init({loadMaps: true}))
       .pipe(sourcemaps.write('./'))
       .pipe(gulp.dest('.tmp/assets/scripts'))
-      // .pipe(reload({stream: true}));
+      .pipe(reload({stream: true}));
   }
 
   watcher
@@ -201,7 +202,7 @@ gulp.task('vendorScripts', function () {
     .pipe(sourcemaps.init({loadMaps: true}))
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('.tmp/assets/scripts'))
-    // .pipe(reload({stream: true}));
+    .pipe(reload({stream: true}));
 });
 
 // //////////////////////////////////////////////////////////////////////////////
@@ -241,14 +242,9 @@ gulp.task('jekyll:rebuild', ['jekyll'], function () {
   browserSync.reload();
 });
 
-// Main build task
-// Builds the site. Destination --> _site
-gulp.task('build', function(done) {
-  runSequence(['jekyll', 'styles'], ['copy:assets'], done);
-});
 
 
-gulp.task('serve', ['build'], function () {
+gulp.task('serve', ['vendorScripts', 'oam:icons', 'javascript', 'styles', 'jekyll'], function () {
   browserSync({
     port: 3000,
     server: {

@@ -69,6 +69,9 @@ a:active {
   transform: translate(0, 1px);
 }
 
+.dark a {color:rgba(255,255,255,.8);}
+.dark a:hover { color:white; }
+
 /* Buttons
    ========================================================================== */
 

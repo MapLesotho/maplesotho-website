@@ -17,7 +17,7 @@
   "homepage": "http://www.maplesotho.com",
   "main": "assets/scripts",
   "scripts": {
-    "serve": "gulp oam:icons && gulp collecticons && gulp serve",
+    "serve": "gulp oam:icons && NODE_ENV=development gulp serve",
     "oam-icons": "gulp oam:icons",
     "lint": "eslint sandbox/assets/scripts/ assets/scripts --ext .js",
     "test": "echo \"No tests\" && exit 0",

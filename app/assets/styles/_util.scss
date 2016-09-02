@@ -154,6 +154,13 @@ $light-grey: #e9e9ea;
     }
   }
 
+  &.github {
+    &:before {
+      margin-right: 0.25rem;
+      @extend %oam-ds-icon-github;
+    }
+  }
+
   &.all {
     &:before {
       margin-right: 0.25rem;
