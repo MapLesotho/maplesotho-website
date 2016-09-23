@@ -11,8 +11,11 @@ author: FIFIQN
 ---
 
 ![](https://maplesotho.files.wordpress.com/2016/09/img-20160907-wa0006.jpg?w=676)
+{:class="pad4 fl" style="margin-right:20px;"} 
 
 Qacha’s Nek celebrates victory when QN Analysis kombat, the analysis team from Qacha’s Nek was presented a winner in the analysis month competition. QN Analysis Kombat members, Fifiqn, Stanley Makhanya and MontshiQn, and Topsqn (a behind the scene member) dedicated their all when they were confronted with this competition. This competition was an uphill climb for them, it hurt their heads a lot but in the end, it was all worth it when they won themselves a prize of a limitless month’s internet. QN Analysis Kombat wishes to thank the following people:
+
+<div class="clearfix"></div>
 
 - **Fifiqn** the team manager who worked tirelessly and drove her team towards this victory.
 - **RustyB**, who was always available to lend a helping hand here and there at any given time of the day.
