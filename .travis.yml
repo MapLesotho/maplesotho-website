@@ -14,8 +14,8 @@ cache:
 
 before_install:
 - chmod +x ./.build_scripts/deploy.sh
-- rvm install 2.2
-- rvm use 2.2
+- rvm install 2.2.3
+- rvm use 2.2.3
 
 script:
 - npm run build
