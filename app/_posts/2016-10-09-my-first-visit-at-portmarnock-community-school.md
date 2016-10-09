@@ -8,8 +8,6 @@ tags: [portmanock, school, mapping, club]
 author: Tshedy
 ---
 
-{{page.title}}
-
 It was on the 4th October 2016, which was the day Lesotho was celebrating it's 50th independence anniversary. We got a warm welcome by Teachers and students. Everyone was wishing us Happy Independence Day with smiles. 
 
 Tuesday is normally assigned by school, as the day whegreby different clubs meet, and when we visited the school we were to meet the mapping club of Portmarnock Community School. We thought we would have two hours only and that would be all for the day. Little did we know that about fifty students were interested in mapping. There were sets of students coming and going in the computer lab for the whole day, from 10am to 3:30pm. 

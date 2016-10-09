@@ -13,9 +13,9 @@
   > * {
     margin-bottom: $base-font-size * $base-line-height; // same as line-height
   }
-}
+} 
 
-.prose--responsive {
+.prose--responsive, .prose-big {
   $prose-resp-font-size: 1.25rem;                       // 20px
   $prose-resp-line-height: 1.6;                         // 32px
 
