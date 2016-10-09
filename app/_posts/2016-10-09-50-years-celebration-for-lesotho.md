@@ -8,7 +8,7 @@ tags: [general, lesotho, '#maplesotho']
 author: DeBigC
 ---
 {{page.title}}
-On Wednesday the 5th of October the Kingdom of Lesotho celebrated the 50 year anniversary of achieveing its independence from the United Kingdom. In celebrating this is in Ireland the Ambassador, His Excellency Paramente Phamotse and Niall FitzGerald, Chairman of Action Ireland Trust joined together to host a community event in the Sands Hotel, Portmarnock.
+On Wednesday the 5th of October the Kingdom of Lesotho celebrated the 50 year anniversary of achieveing its independence from the United Kingdom. In celebrating this day, in Ireland the Ambassador, His Excellency Paramente Phamotse and Niall FitzGerald, Chairman of Action Ireland Trust joined together to host a community event in the Sands Hotel, Portmarnock.
 Niall FitzGerald outlined a numerous and challenging development projects that are happening that are delivered by a civil society organisation. Paramente Phamotse looked back on the history of Ireland and Lesotho, and mentioned Joseph Orpen a surveyor, after whom Orpen Road in Maseru is named as being one of the contributors to an independent Lesotho today.
 The evening was a wonderful occasion, to enjoy with a small country the precious gift of their independence and sovereignty and to mark the achievements they have made in that time, as well as look forward to new ones. Of course the mentions for #MapLesotho were many and frequent all accross the evening.
 ![](http://imgur.com/a/a8r01)
