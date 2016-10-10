@@ -3,6 +3,7 @@ layout: post
 title: 'My first visit at Portmarnock Community School'
 date: 2016-10-09 16:05:37.000000000 +01:00
 type: post
+status: publish
 categories: []
 tags: [portmanock, school, mapping, club]
 author: Tshedy
@@ -16,4 +17,4 @@ The first group we met was using ID editor and what we did was to joining in a m
 
 We had a wonderful Lesotho 50th Indepenedece Anniversary with students, and teachers. **#MapLesotho** have got an army at Portmarnock CS which is dedicating it's time to make Lesotho a better place. Thanks to our **Chaffeur** Collette who drove us to and from school, Niall who made sure we don't work on empty stomachs, **hahah** and the student Sam who made sure everything in the lab was working well.
 
-![Imgur](http://imgur.com/a/zdDzr)
+![Imgur](http://imgur.com/IOOufa1)
