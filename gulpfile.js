@@ -289,20 +289,20 @@ gulp.task('default', ['clean'], function () {
   gulp.start('build');
 });
 
-gulp.task('build', function(done) {
-  runSequence(['vendorScripts', 'oam:icons', 'jekyll', 'javascript', 'styles', 'copy:assets', 'html'], done)
-});
+// gulp.task('build', function(done) {
+//   runSequence(['vendorScripts', 'oam:icons', 'jekyll', 'javascript', 'styles', 'copy:assets', 'html'], done)
+// });
 
 // gulp.task('html', function() {
 //   runSequence(['vendorScripts', 'oam:icons', 'javascript', 'styles', 'jekyll'], done);
 // });
 
-// gulp.task('build', function () {
-//   gulp.start(['vendorScripts', 'oam:icons', 'javascript', 'styles', 'jekyll'], function () {
-//     gulp.start(['html'], function () {
-//       return gulp.src('_site/**/*')
-//         .pipe($.size({title: 'build', gzip: true}))
-//         .pipe(exit());
-//     });
-//   });
-// });
+gulp.task('build', function () {
+  gulp.start(['vendorScripts', 'oam:icons', 'javascript', 'styles', 'jekyll'], function () {
+    gulp.start(['html'], function () {
+      return gulp.src('_site/**/*')
+        .pipe($.size({title: 'build', gzip: true}))
+        .pipe(exit());
+    });
+  });
+});
