@@ -180,26 +180,27 @@ $light-grey: #e9e9ea;
 }
 
 
-.global-menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
+  .global-menu, ul.global-menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
 
-.global-menu>li {
-    display: inline-block;
-    margin: 0 .5rem 0 0;
-}
+  .global-menu>li {
+      display: inline-block;
+      margin: 0 .5rem 0 0;
+  }
 
-.global-menu-item {
-    display: block;
-    line-height: 2rem;
-    font-size: 1rem;
-    padding: 0 .5rem;
-    border-radius: .25rem;
-    color: #314b54;
-    font-weight: 700;
-}
+  .global-menu-item {
+      display: block;
+      line-height: 2rem;
+      font-size: 1rem;
+      padding: 0 .5rem;
+      border-radius: .25rem;
+      color: #314b54;
+      font-weight: 700;
+  }
+
 .page__title {
   margin:0;
 }
