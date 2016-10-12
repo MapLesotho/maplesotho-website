@@ -8,17 +8,52 @@ title: Dashboard
   			<h2 class="">Welcome to the #MapLesotho Dashboard</h2>
   			<p>Follow the links to discover who's mapped the most, whose actually been mapping recently and also to follow the status of the current tasks.</p>
         <script async defer src="//shrouded-ocean-41006.herokuapp.com/slackin.js?large"></script>
-  			<div><a class="button" href="{{site.baseurl}}/blog">New Blog</a></div>
-        <p>Keep up with the community on the blog too!</p>
-  			
-        <a class="wordpress-timeline" href="https://maplesotho.wordpress.com" data-show-gravatars="true" width="600">Recent Posts</a>
   		</div>
 
   	</div>
+
+    <style type="text/css">
+      .blog-img {
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: auto;
+        max-height: 350px;
+        overflow: hidden;
+      }
+      .blog-img img {
+          visibility: hidden;
+          max-height: none !important;
+          height: auto !important;
+          width: 100% !important;
+          margin: 0 !important;
+          padding: 0 !important;
+      }
+      .no-margin {margin:0;}
+      .m20 {margin-bottom:20px; margin-top:20px;}
+    </style>
+    <div class="blog-last wrapper cleafix">
+      <div class="col8 m2 prose prose--responsive center">
+        {% assign post = site.posts.first %}
+       <h2 class="no-margin"> <a href="{{post.url}}">{{post.title}}</a></h2>
+        <div class="authors small m20">
+          <span class="meta">{{post.date | date_to_long_string  }}</span> | by <strong>{{post.author}}</strong>
+        </div>
+        <div class="pad1y m20">
+          <a href="{{post.url}}">
+            <div class="blog-img" style="background-image: url({{post.banner}})">
+              <img src="{{post.banner}}">
+            </div>
+          </a>
+        </div>
+        <div class="pad2y">{{post.excerpt | strip_html}}</div>
+        <a href="{{post.url}}" class="button hollow">Read More</a>
+      </div>
+    </div>
   </div>
 
   <div class="p4y line-top line-bottom">
-  	<div class="wrapper clearfix prose">
+  	<div id="dash" class="wrapper clearfix prose">
   		<div class="col4 p1">
           <div class="item p2  line-all">
             <h2 class="main__item-title">Leaderboard</h2>
