@@ -290,7 +290,7 @@ gulp.task('default', ['clean'], function () {
 });
 
 gulp.task('build', function(done) {
-  runSequence(['vendorScripts', 'oam:icons', 'javascript', 'styles', 'jekyll', 'html'], done)
+  runSequence(['vendorScripts', 'oam:icons', 'jekyll', 'javascript', 'styles', 'copy:assets', 'html'], done)
 });
 
 // gulp.task('html', function() {
