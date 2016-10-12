@@ -51,6 +51,7 @@
     "eslint-config-standard": "^6.2.0",
     "eslint-plugin-promise": "^3.0.0",
     "eslint-plugin-react": "^6.4.0",
+    "eslint-plugin-standard": "^2.0.1",
     "gulp": "^3.9.1",
     "gulp-cache": "^0.4.2",
     "gulp-csso": "^2.0.0",
