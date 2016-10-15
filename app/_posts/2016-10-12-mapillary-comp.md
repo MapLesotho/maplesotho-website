@@ -5,7 +5,7 @@ date: 2016-10-12 21:44:00.000000000 +02:00
 type: post
 categories: competition
 tags: [mapillary, osm, pictures, rules, competition]
-author: RustyB
+author: "RustyB (english) &amp; Nuts2001 (sesotho)"
 banner: https://s3.eu-central-1.amazonaws.com/ls-sat/blog-images/comp-pic.jpg
 ---
 
