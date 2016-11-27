@@ -1,15 +1,16 @@
 ---
 layout: post
 title: '24 hour mapathon - a huge day!'
-date: 2016-11-27 21:44:00.000000000 +02:00
+date: 2016-11-27 18:44:00.000000000 +02:00
 type: post
 categories: mapathon
 tags: [mapathon, osm, pictures]
 author: "RustyB &amp; DeBigC"
-banner: https://s3.eu-central-1.amazonaws.com/ls-sat/blog-images/comp-pic.jpg
-published: false
+banner: https://s3.eu-central-1.amazonaws.com/ls-sat/blog-images/mapathon.jpg
+published: true
 ---
-Friday the 18th of November 2016 was another huge day for #MapLesotho. At 8am that morning the starter's gun was fired for 24 hours of mapping in Portmarnock Community School. 
+
+Friday the 18th of November 2016 was another huge day for **#MapLesotho**. At 8am that morning the starter's gun was fired for 24 hours of mapping in Portmarnock Community School. 
 
 A similar event took place a year ago in the school, but this year it was always going to be a bigger event because  200 children submitted sponsorship cards, full of pledges from their families and friends so long as they could stay awake the whole day and make the openstreetmap databases of Lesotho light up with activity. Also this year there is a mapping club at the school.
 
@@ -25,4 +26,10 @@ At the end of the day this created 462k new nodes to add to the total of 13.7 mi
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Weekly <a href="https://twitter.com/hashtag/maplesotho?src=hash">#maplesotho</a> stats ready - a huge and good week &gt; impact of the 24 hour mapathon as part of <a href="https://twitter.com/hashtag/osmgeoweek?src=hash">#osmgeoweek</a> <a href="https://t.co/eMT7lahxo5">https://t.co/eMT7lahxo5</a></p>&mdash; Søren Johannessen (@neogeografen) <a href="https://twitter.com/neogeografen/status/800253190620987392">November 20, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-In the bigger context this was one of almost 100 events in the world being organised for #osmgeoweek . The kids once again did themselves proud.
+In the bigger context this was one of almost 100 events in the world being organised for **#osmgeoweek**. The kids once again did themselves proud.
+
+<div class="p2 fill-green dark" markdown="1">
+At #MapLesotho we've been tracking user contributions since February 2015. We arranged a special board for the mapathon. See how everyone got on through the mapathon.
+
+<a href="http://dash.maplesotho.com/new-dash/mapathon.html" class="button">Checkout the board <i class="oam-ds-icon-chevron-right"></i></a>
+</div>
