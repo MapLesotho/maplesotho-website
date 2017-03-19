@@ -5,7 +5,7 @@ layout: default
 <div class="wrapper clearfix">
 	<div class="col8 m2 p4y">
 		<h2>{{page.title}}</h2>
-		<p><small>{{page.date | date_to_long_string  }}</small> | <strong>{{page.author}}</strong></p>	
+		<p><small>{{page.date | date_to_long_string  }}</small> | <a href="http://www.openstreetmap.org/user/{{page.author}}"><strong>{{page.author}}</strong></a></p>	
 		<div class="space-top2 p2y line-top prose prose-big">
 			{{content}}
 		</div>

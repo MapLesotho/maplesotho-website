@@ -39,7 +39,7 @@ title: Dashboard
         {% assign post = site.posts.first %}
        <h2 class="no-margin"> <a href="{{post.url}}">{{post.title}}</a></h2>
         <div class="authors small m20">
-          <span class="meta">{{post.date | date_to_long_string  }}</span> | by <strong>{{post.author}}</strong>
+          <span class="meta">{{post.date | date_to_long_string  }}</span> | by <a href="http://www.openstreetmap.org/user/{{post.author}}"><strong>{{post.author}}</strong></a>
         </div>
         <div class="pad1y m20">
           <a href="{{post.url}}">
