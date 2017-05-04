@@ -5,6 +5,7 @@ author: DeBigC
 ---
 
 # 24 Hour MapLesotho Mapathon
+![alt text](![alt text](http://imgur.com/a/50oxU "Logo Title Text 1")
 
 ## What's happening? > 
 There will be another huge 24 hour mapathon on the 5th of May in Portmarnock Community School. It will begin at 8am that day, and continue through the night until 8am on the 6th of May. There were two previous mapathons like this, but this one is focussed on higher quality mapping. From previous experience a lot of work gets done, and a lot of teaching and learning on openstreetmap takes place. Over 80 young Mappers will participate, and will stay up most of the night to make their contribution.
