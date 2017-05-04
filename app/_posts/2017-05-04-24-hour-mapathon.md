@@ -1,6 +1,8 @@
+---
 title: 24 hour mapathon
 layout: post
 author: DeBigC
+---
 
 # 24 Hour MapLesotho Mapathon
 ## What's happening? > 
