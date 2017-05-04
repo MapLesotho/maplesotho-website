@@ -14,10 +14,15 @@ There are three objectives. The first is to get time mapping, and strengthen the
 
 ## What is the focus of the challenge?>
 The mapathon is helping the most pressing needs of the project, which is to "map the gaps" that exist in #MapLesotho. These are seen [here](http://dash.maplesotho.com/task-status/#7.4/-29.667/28.394) in the white coloured tiles. However, to help out the following areas of Lesotho are getting attention:
+
 * [Mafeteng](http://tasks.hotosm.org/project/1938), on the West of Lesotho is 60% done and is top priority. [Tlalane](https://twitter.com/T_lane2) has been mapping mostly on her own, and needs your tweets for encouragement. The soil is very dry here, so be careful to watch for that in the imagery.
+
 * Leribe is in the north of Lesotho and is 62% done and needs a lot of assistance. [Mr Seisa](https://twitter.com/Seisacharles) is the last man standing here and needs you to shout that you are helping him do the many villages in his district.
+
 * [Mokhotlong](http://tasks.hotosm.org/project/1946) has big problems getting the internet signal to map during the snowy months and is only 85% done. [Bonolo](https://twitter.com/Bonolo_33) is waiting to hear you tell her she's got some assistance with those big peaks and low valleys
+
 * [Mohales Hoek](http://tasks.hotosm.org/project/1939) is lucky to have two power mappers in [Montshy](https://twitter.com/montseng11) and [Kupie](https://twitter.com/kupie22), but has still at 89% done. There are dark valleys here and so careful mapping is required.
+
 * [Berea](http://tasks.hotosm.org/project/1936) have two leading mappers in [TC Mofolo](https://twitter.com/TeaSeaMofolo) and [Mzwandile](https://twitter.com/thokoane) also known as "Nuts". Help them be less nuts by only having 90% of the work done. There is a lot of farmland here so join it up if you can 
 
 ## What about the overall #MapLesotho Project? > 
