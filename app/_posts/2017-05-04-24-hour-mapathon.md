@@ -17,7 +17,7 @@ The mapathon is helping the most pressing needs of the project, which is to "map
 
 * [Mafeteng](http://tasks.hotosm.org/project/1938), on the West of Lesotho is 60% done and is top priority. [Tlalane](https://twitter.com/T_lane2) has been mapping mostly on her own, and needs your tweets for encouragement. The soil is very dry here, so be careful to watch for that in the imagery.
 
-* Leribe is in the north of Lesotho and is 62% done and needs a lot of assistance. [Mr Seisa](https://twitter.com/Seisacharles) is the last man standing here and needs you to shout that you are helping him do the many villages in his district.
+* [Leribe](http://tasks.hotosm.org/project/1937) is in the north of Lesotho and is 62% done and needs a lot of assistance. [Mr Seisa](https://twitter.com/Seisacharles) is the last man standing here and needs you to shout that you are helping him do the many villages in his district.
 
 * [Mokhotlong](http://tasks.hotosm.org/project/1946) has big problems getting the internet signal to map during the snowy months and is only 85% done. [Bonolo](https://twitter.com/Bonolo_33) is waiting to hear you tell her she's got some assistance with those big peaks and low valleys
 
