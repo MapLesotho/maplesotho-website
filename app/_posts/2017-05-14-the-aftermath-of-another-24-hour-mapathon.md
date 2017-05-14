@@ -7,7 +7,7 @@ categories: '#MapLesotho Mapathon Portmarnock'
 tags:
   - '#MapLesotho Mapathon Portmarnock'
 author: DeBigC
-banner: 'http://imgur.com/a/WMy94'
+banner: 'http://i.imgur.com/ofLG4H8.jpg'
 ---
 Often,  these 24 hour **mapping sprints** can be draining, to the point that we blog about them the following week after they are done. We [blogged about this](http://www.maplesotho.com/blog/2017/05/04/24-hour-mapathon/) mapathon previously, just for the build up. But until the sleep patterns returned few of us had the clarity to undertake this.
 
