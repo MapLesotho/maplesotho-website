@@ -2,7 +2,7 @@ backend:
   name: github
   repo: maplesotho/maplesotho-website # Path to your Github repository
   branch: master # Branch to update
-  site_id: astrologer-toad-71638.netlify.com # netlify auth url see https://github.com/netlify/netlify-cms/pull/375
+  site_domain: astrologer-toad-71638.netlify.com # netlify auth url see https://github.com/netlify/netlify-cms/pull/375
 
 media_folder: "app/assets/graphics/uploads"
 public_folder: "/assets/graphics/uploads"
