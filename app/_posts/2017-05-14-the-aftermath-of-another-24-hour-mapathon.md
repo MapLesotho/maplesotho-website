@@ -16,3 +16,4 @@ The result was that [five hotosm tasks](http://tasks.hotosm.org/?sort_by=priorit
 The mapathon day (and night) produced over [384 thousands nodes](https://docs.google.com/spreadsheets/d/1kRW1XTcPUoBFwWLzss6ge5YKSZG8KdwkkdG-LKPxh-0/edit?usp=sharing). Considering that there was more of an emphasis on quality, and that several of the students at Portmarnock School were in exam mode and couldn’t participate, this is a handsome return. It was also great to see a hard core of “12 apostles” mapping in Maseru for the 24 hours.  
 
  
+
