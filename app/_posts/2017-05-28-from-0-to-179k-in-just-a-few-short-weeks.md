@@ -16,3 +16,4 @@ When I got to Maseru I found people all staring intently at their laptops and th
 Our young beardie was more than willing to show us the ins and outs and unleashed all his mapping might on us and i was hooked.Funny enough the mapping sessions were easy-going and of course my fellow sassy mappers' relentless humour kept me going back.
 
 I formed part of an amazing team of Physical planners, Assistant Physical planners and Landuse Planners and together we produced a draft local area plan for Motsekuoa. Unbeknownst to me the #maplesotho bug had bit and I must say it isn't too shabby. See my node count now at 179 thousand nodes [here](http://hdyc.neis-one.org/?matsele)
+
