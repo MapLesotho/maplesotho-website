@@ -19,7 +19,7 @@ seeing the progress chart, and mappers watching how their districts are doing.
 Each day came with change, more tiles getting done, changing from white to
 orange to green when validation started. 
 
-Pic
+![pic of stats](https://i.imgur.com/V2ptnLy_d.jpg)
 
 However, some of the districts got this all wrong in terms
 of required effort.  That is to say, that
@@ -41,4 +41,5 @@ but we need guiding tools, there has to be a national plan that guides us as
 planners to plan our local areas. #MapLesotho OSM is our foundation to make
 National, District then Local plans long into the future, so long as we get the
 hard work over with now.
+
 
