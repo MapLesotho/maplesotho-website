@@ -11,7 +11,7 @@ tags:
   - OSM
   - planning
 author: tshedy
-banner: 'http://imgur.com/a/Pe5q8'
+banner: 'https://i.imgur.com/V2ptnLy_d.jpg'
 ---
 The mapping is over after a year of hard work and dedication
 by a number of us. We were  used to
@@ -41,3 +41,4 @@ but we need guiding tools, there has to be a national plan that guides us as
 planners to plan our local areas. #MapLesotho OSM is our foundation to make
 National, District then Local plans long into the future, so long as we get the
 hard work over with now.
+
