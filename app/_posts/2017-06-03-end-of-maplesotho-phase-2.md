@@ -11,7 +11,7 @@ tags:
   - OSM
   - planning
 author: tshedy
-banner: 'https://i.imgur.com/V2ptnLy_d.jpg'
+banner: 'https://i.imgur.com/V2ptnLy_d.jpg?maxwidth=1000&shape=thumb&fidelity=high'
 ---
 The mapping is over after a year of hard work and dedication
 by a number of us. We were  used to
@@ -19,7 +19,7 @@ seeing the progress chart, and mappers watching how their districts are doing.
 Each day came with change, more tiles getting done, changing from white to
 orange to green when validation started. 
 
-![pic of stats](https://i.imgur.com/V2ptnLy_d.jpg)
+![pic of stats](https://i.imgur.com/V2ptnLy_d.jpg?maxwidth=1000&fidelity=high)
 
 However, some of the districts got this all wrong in terms
 of required effort.  That is to say, that
@@ -41,5 +41,6 @@ but we need guiding tools, there has to be a national plan that guides us as
 planners to plan our local areas. #MapLesotho OSM is our foundation to make
 National, District then Local plans long into the future, so long as we get the
 hard work over with now.
+
 
 
