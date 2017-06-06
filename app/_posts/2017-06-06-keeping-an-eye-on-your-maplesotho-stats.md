@@ -7,7 +7,7 @@ categories: 'osm stats #MapLesotho'
 tags:
   - '#MapLesotho #openstreetmap'
 author: DeBigC
-banner: '[img]https://preview.ibb.co/hUUOna/score_board.jpg[/img][/url]'
+banner: '[url][img]https://preview.ibb.co/hUUOna/score_board.jpg[/img][/url]'
 ---
 There are loads of ways to check your stats on OSM. We are currently re-designing the dashboards to assist all of our mappers in seeing how they contributed. We have always been aware how important measurement is. Peter Drucker, a world famous organisational motivational analyst and writer says: *that which gets measured gets done*. And of course he is right.
 
@@ -22,6 +22,7 @@ A real personal favourite of mine is another of Pascal Neis' creations, cleverly
 Enjoy!
 
      
+
 
 
 
