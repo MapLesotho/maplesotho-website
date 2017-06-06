@@ -17,11 +17,12 @@ Also really super useful is the OSM stats service provided by Pascal Neis. When 
 
 Again, with a little more raw of a feel is the OSM database page. Forgive the GPS stats when it opens, and if you scroll down a little you get to see an awesome table of "top contributors of the day, week and month". There is a high frequency of times that Lesotho mappers have been high on that list. 
 
-A real personal favourite of mine is another of Pascal Neis' creations, cleverly dubbed "[How did you contribute](http://hdyc.neis-one.org/?DeBigC)?" This requires you to enter your OSM username. You can then glean a whole lot of infrmation about yourself and be really vain like I just was a second ago. On mine it says that I've mapped 23 countries, and am over the 2.5 million mark and now the 310th mapper in the world for node count ;0.
+A real personal favourite of mine is another of Pascal Neis' creations, cleverly dubbed "[How did you contribute](http://hdyc.neis-one.org/?DeBigC)?" This requires you to enter your OSM username. You can then glean a whole lot of infrmation about yourself and be really vain like I just was a second ago. On mine it says that I've mapped 23 countries, and am over the 2.5 million mark and now the 310th mapper in the world for node count ;).
 
 Enjoy!
 
      
+
 
 
 
