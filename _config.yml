@@ -10,6 +10,7 @@ highlighter: false
 
 baseurl: ""
 siteurl: "http://www.maplesotho.com"
+highlighter: rouge
 
 permalink: pretty
 defaults:
