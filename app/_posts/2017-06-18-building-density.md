@@ -2,13 +2,14 @@
 layout: post
 type: post
 published: 'true'
-title: 'With > 750,000 of them where all the buildings at?'
+title: 'With > 750,000 of them, where all the buildings at?'
 categories: 'osm, stats, #MapLesotho'
 tags:
   - '#MapLesotho'
   - '#openstreetmap'
 author: RustyB
-banner: 'https://s3.eu-central-1.amazonaws.com/ls-sat/blog-images/hexgrid/ml-bulding-densityw.jpg'
+banner: >-
+  https://s3.eu-central-1.amazonaws.com/ls-sat/blog-images/hexgrid/ml-bulding-densityw.jpg
 ---
 
 So in this post the first in a series of little real world use cases of MapLesotho data, we're going to be mapping building density in Lesotho.
