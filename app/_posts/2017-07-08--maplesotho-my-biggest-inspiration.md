@@ -6,7 +6,7 @@ title: '#MapLesotho: My Biggest Inspiration'
 categories: summary
 tags:
   - summary
-author: fifi semethe
+author: fifiqn
 banner: 'https://s3.eu-central-1.amazonaws.com/ls-sat/blog-images/fifi/fifi-blog.jpg'
 ---
 \#MapLesotho: My Biggest Inspiration
@@ -51,6 +51,7 @@ All we have to do is just apply fieldpapers for field verification to fill in th
 <span id="_gjdgxs" class="anchor"></span>**\#MapLesotho** is for the Basotho to make a better planned built environment Lesotho. Participating from the beginning made me realise how the three beardies of which BigC is one thought about how to get us caught up with the rest of osm. 
 
 **Our map was empty in 2014, now it is the most mapped in Africa.**
+
 
 
 
