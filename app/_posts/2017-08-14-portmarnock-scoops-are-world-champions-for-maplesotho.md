@@ -23,3 +23,4 @@ To win the Sage World Cup for Social Innovation using this kind of technology is
 This achievement is a credit to the school community, the teachers, the board of management, the partners and sponsors and Fingal County Council who introduced mapping to the school in 2014. However, full credit goes to Colin Mc Andrew, Ravikanth Gollapalli, Ahmed Jouda and Luke Peyton who did all the work and preparation for this win. 
 
 
+
