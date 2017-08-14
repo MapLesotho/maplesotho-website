@@ -3,7 +3,7 @@
   @extend .clearfix;
 
   .table-section {
-    @include col(12/12);
+    @include column(12/12);
     margin-top: 2rem;
 
     // &:first-child {
@@ -11,7 +11,7 @@
     // }
 
     // @include media(large-up) {
-    //   @include col(6/12, $cycle: 2);
+    //   @include column(6/12, $cycle: 2);
 
     //   &:nth-child(2) {
     //     margin-top: 0;
