@@ -23,11 +23,12 @@ The project that was entered proved that mapping Lesotho makes data, and these d
 
 The competition had 32 teams, and the semi finals were hotly contested with Canada, the USA and Israel. The Portmarnock students were grilled by enterprise dragons  after making a short pitch for why using OpenStreetMap leads to other innovations.
 
-"*What is impressive about this is that the students went from simply learning how to map everything, to making online applications or writing reports for the Lesotho Government. We knew that before the award, but this victory confirms it very clear way*", said Ms Colette Cronin Maths teacher at the school.
+"*What is impressive about this is that the students went from simply learning how to map everything, to thinking of the whole thing as a database. Soon after they were making applications, and writing reports for the Lesotho Government about soil erosion. We knew that was something special before the award, but this victory confirms beyond any doubt that this was something special and helped them apply what they learned*", said Ms Colette Cronin Maths teacher at the school.
 
 To win the Sage World Cup for Social Innovation using this kind of technology is much deserved and very prestigious. Mr Niall FitzGerald, who is the Development Education mentor for these students explains further the significance of the win: "*this award shows that there is talent in Fingal's young people for emerging opensource technologies and the application of that to social entrepreneurship causes. Right now the students are exhausted by the intense scrutiny and focus of competition that they have been through, and are taking a well deserved but short break and will return home on Wednesday*."
 
 This achievement is a credit to the school community, the teachers, the board of management, the partners and sponsors and Fingal County Council who introduced mapping to the school in 2014. However, full credit goes to Colin McAndrew, Ravikanth Gollapalli, Ahmed Jouda and Luke Peyton who did all the work and preparation for this win. 
+
 
 
 
