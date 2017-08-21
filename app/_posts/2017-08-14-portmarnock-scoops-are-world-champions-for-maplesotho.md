@@ -7,11 +7,11 @@ categories: ' Prizes OSM'
 tags:
   - Social Innovation SAGE
 author: DeBigC
-banner: 'http://i.imgur.com/rrB8vqT.jpg'
+banner: 'https://i.imgur.com/rrB8vqT.jpg'
 ---
 All #MapLesotho and OpenStreetMap enthusiasts will be aware that Portmarnock Community School are enthusiastic mappers of Lesotho and have entered their activities  into the SAGE World Cup for Social Innovators under a project titled "[Global Citizens Mapping the Future](https://twitter.com/globalcitmtf?lang=en)". This year the competition took place in the city Of Odessa, The Ukraine.
 
-![Sage 2017 winners](http://i.imgur.com/rrB8vqT.jpg)
+![Sage 2017 winners](https://i.imgur.com/rrB8vqT.jpg)
 
 The project that was entered proved that mapping Lesotho makes data, and these data is re-usable for good social ends in several ways like:
  
