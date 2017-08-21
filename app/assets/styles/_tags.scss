@@ -109,3 +109,19 @@
     margin-bottom: 0;
   }
 }
+
+
+.quick-links {
+  text-align: center;
+  @include media(medium-up) {
+    text-align: inherit;
+  }
+  & > a {
+    display: block;
+    margin: 5px 0;
+    
+    @include media(medium-up) {
+      display: inline-block;
+    }
+  }
+}
