@@ -12,6 +12,9 @@ baseurl: ""
 siteurl: "http://www.maplesotho.com"
 highlighter: rouge
 
+media_folder: "app/assets/graphics/uploads"
+public_folder: "/assets/graphics/uploads"
+
 permalink: pretty
 defaults:
   -
