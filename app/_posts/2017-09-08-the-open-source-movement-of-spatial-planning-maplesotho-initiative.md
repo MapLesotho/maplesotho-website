@@ -5,9 +5,9 @@ published: 'true'
 title: 'The Open Source Movement of Spatial Planning:#MapLesotho Initiative'
 categories: Training
 tags:
-  - 'List[QGIS'
+  - QGIS
   - Planning
-  - 'OSM]'
+  - OSM
 author: fifiqn
 banner: .
 banner_upload: /assets/graphics/uploads/IMG-20170907-WA0002.jpg
@@ -24,3 +24,4 @@ After all of this, a rather interesting reaction was displayed through the entir
  
 
  
+
