@@ -13,8 +13,7 @@ author: fifiqn
 banner: .
 banner_upload: /assets/graphics/uploads/IMG-20170907-WA0002.jpg
 ---
-
-![null](/assets/graphics/uploads/IMG-20170907-WA0013.jpg)
+![Group Photo](/assets/graphics/uploads/IMG-20170907-WA0013.jpg)
 
 The first workshop on settlement layouts digitization for the southern region was held and hosted in Mohale’s Hoek District. The Southern region was comprised of five districts namely; the Mafeteng District, the Mohale’s hoek district, the Quthing district and the Qacha’s Nek district. This specific workshop of three days dating from the 05th to the 07th of September, 2017 was an initiative to introduce settlement layout digitization using open source technology (QGIS and OSM). The advantage and importance of incorporating osm data in the application of any kind of planning is that, it results in evidence based planning.
 
