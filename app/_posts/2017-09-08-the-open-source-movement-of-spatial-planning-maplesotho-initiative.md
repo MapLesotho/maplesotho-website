@@ -5,6 +5,7 @@ published: 'true'
 title: 'The Open Source Movement of Spatial Planning:#MapLesotho Initiative'
 categories: Training
 tags:
+  - '#MapLesotho'
   - QGIS
   - Planning
   - OSM
@@ -24,4 +25,5 @@ After all of this, a rather interesting reaction was displayed through the entir
  
 
  
+
 
