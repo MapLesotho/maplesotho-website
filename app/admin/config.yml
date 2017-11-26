@@ -1,5 +1,5 @@
 backend:
-  name: github
+  name: git-gateway
   repo: maplesotho/maplesotho-website # Path to your Github repository
   branch: master # Branch to update
   site_domain: astrologer-toad-71638.netlify.com # netlify auth url see https://github.com/netlify/netlify-cms/pull/375
