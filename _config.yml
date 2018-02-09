@@ -25,3 +25,5 @@ defaults:
       psection: "Blog"
       phome: "/"
       permalink: /blog/:year/:month/:day/:title/
+gems:
+  - jekyll-last-modified-at
