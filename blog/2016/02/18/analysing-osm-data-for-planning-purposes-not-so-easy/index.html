@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="MapLesotho - Planning and OpenStreetMap project" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <title>Analysing OSM data for planning purposes - not so easy</title>
+
+    <meta name="description" content="It’s just so easy to add new features and edit those existing on openstreetmap with it’s impressive number of tools including iD and JOSM. Little know though...">
+
+    <link rel="canonical" href="/blog/2016/02/18/analysing-osm-data-for-planning-purposes-not-so-easy/">
+
+    <link rel="author" type="text/plain" href="humans.txt" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="#MapLesotho" />
+    <meta name="twitter:title" content="MapLesotho - Planning and OpenStreetMap project">
+    <meta name="twitter:description" content="MapLesotho - Planning and OpenStreetMap project" />
+    <meta name="twitter:image:src" content="http://www.maplesotho.com/assets/graphics/meta/default-meta-image.png" />
+    <!--/ Twitter --> 
+
+    <!-- OG -->
+    <meta property="og:site_name" content="#MapLesotho - Planning and OpenStreetMap project" />
+    <meta property="og:title" content="#MapLesotho - Planning and OpenStreetMap project" />
+    <!-- <meta property="og:url" content="" /> -->
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="MapLesotho - Planning and OpenStreetMap project" />
+    <meta property="og:image" content="http://www.maplesotho.com/assets/graphics/meta/default-meta-image.png" />
+    <!--/ OG -->
+
+    <link rel="shortcut icon" href="http://www.maplesotho.com/assets/graphics/meta/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="assets/graphics/meta/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/graphics/meta/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="http://www.maplesotho.com/assets/graphics/meta/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="http://www.maplesotho.com/assets/graphics/meta/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="http://www.maplesotho.com/assets/graphics/meta/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="http://www.maplesotho.com/assets/graphics/meta/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="http://www.maplesotho.com/assets/graphics/meta/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="http://www.maplesotho.com/assets/graphics/meta/apple-touch-icon-152x152.png" />
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700" />
+
+
+    
+
+    <link rel="stylesheet" href="/assets/styles/main-3d4d78346f.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <script type="text/javascript" src="https://widgets.wp.com/platform.js"></script>
+
+    
+    <script src="/assets/scripts/vendor-9a93b23e43.js"></script>
+    
+    <script src="/assets/scripts/bundle-048c897fa8.js"></script>
+
+    <script type="text/javascript" src="/assets/scripts/jquery.min.js"></script>
+
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+  </head>
+  <body>
+   <!--[if lt IE 11]>
+      <div id="nocando">
+        <h1>No can do!</h1>
+        <p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      </div>
+    <![endif]-->
+
+
+  <div class="p2y fill-lightgrey">
+  
+  	<div class="wrapper clearfix">
+    <nav>
+      <div class="col4">
+  		<h1 class="page__title">
+        <a href="/" title="Visit homepage">
+          <span class="mast-logo mast-logo--h">
+            <img src="/assets/graphics/layout/maplesotho-logo-pos.svg" alt="#MapLesotho logo" class="mast-logo__image" style="max-width: 180px;" />
+            <!-- <strong class="mast-logo__text">MapLesotho</strong> -->
+            <small class="mast-logo__label">Blog</small>
+          </span>
+        </a>
+      </h1>   
+      </div> 
+      <div class="col8">
+        <ul class="global-menu text-right">
+          <li><a class="global-menu-item" href="/get-data/">Get the data</a></li>
+          <li><a class="global-menu-item" href="/#dash">Dashboard</a></li>
+          <li><a class="global-menu-item" href="https://stats.maplesotho.com/">Users</a></li>
+          <li><a class="global-menu-item" href="/about/">About</a></li>
+          <li><a class="global-menu-item" href="/blog/">Blog</a></li>
+          <li><a class="global-menu-item" href="/videos/">Videos</a></li>
+          <li><a class="global-menu-item" href="/weekly/">Weekly</a></li>
+        </ul>
+      </div>
+      </nav>
+  	</div>
+  
+  </div>
+
+  <div class="wrapper clearfix">
+	<div class="col8 m2 p4y">
+		<h2>Analysing OSM data for planning purposes - not so easy</h2>
+		<p><small>18 February 2016</small> | <a href="http://www.openstreetmap.org/user/rusty1052"><strong>rusty1052</strong></a></p>	
+		<div class="space-top2 p2y line-top prose prose-big">
+			<p>It’s just so easy to add new features and edit those existing on <strong>openstreetmap</strong> with it’s impressive number of tools including iD and JOSM. Little know though is the vast array of little tools which have been created for extracting and working with that wonderful open geo data.</p>
+
+<p>This last week has been eye opening for me once again, I have been working with a small group of assistant physical planners on how we get hold of an extract of OSM for Lesotho, how do we load this into our chosen GIS tool (postGIS) and finally what sorts of exploratory analysis is possible.</p>
+
+<p>Thanks to the lovely folks at <strong>geofabrik</strong> we have a daily Lesotho OSM extract. It takes the form of an osm.pbf file.</p>
+
+<p>It was a week of new experiences for all the APPs, they had for one never touched the command line before. Something you really need to know if you want to use <strong>osm2pgsql</strong> to get your pbf file into your database.</p>
+
+<p>Each day they will download the <strong>lesotho-latest.osm.pbf</strong> file from <a href="http://download.geofabrik.de/africa/lesotho.html">geofabrik</a> and open up the command line to run the following:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>osm2pgsql -c -d lesotho0902 -U colinbroderick -H localhost --hstore  --slim --number-processes 10 --extra-attributes -C 10000 1602-lesotho-latest.osm.pbf
+</code></pre></div></div>
+
+<p>This creates at least 3 database tables one for each of the geometry types present in OSM:</p>
+
+<ul>
+  <li>
+    <p>planet_osm_point</p>
+  </li>
+  <li>
+    <p>planet_osm_line</p>
+  </li>
+  <li>
+    <p>planet_osm_polygon</p>
+  </li>
+</ul>
+
+<p><img src="https://maplesotho.files.wordpress.com/2016/02/screen-shot-2016-02-18-at-10-48-29.png" alt="Screen Shot 2016-02-18 at 10.48.29" /></p>
+
+<p>We are now able to easily perform some high level spatial analysis using the data in each of these tables.</p>
+
+<p>Have you used the command line before? It’s not so easy to get started with right? After a rocky start all our guys are flying along with it now, it’s no longer scary! They are updating the database everyday!</p>
+
+<p><img src="https://maplesotho.files.wordpress.com/2016/02/img_1259.jpg" alt="IMG_1259.JPG" /></p>
+
+<p>We chose to take on the challenge of training the APP’s to use PostGIS for their analysis as it we felt it was the most performant for them to work between periods of online connectivity.</p>
+
+<p><strong>Watch out for some details of the spatial analysis that will be falling out of these five newly trained spatial analysts!</strong></p>
+
+<p><strong>Find out more on how you can get your own Lesotho database <a href="https://github.com/rustyb/lesotho_manual/wiki/Using-osm-with-postgis---importing-data">on our analysis wiki</a></strong></p>
+
+		</div>
+	</div>
+</div>
+
+<div class="wrapper center p8x p4y post-actions">
+	<a class="icon twitter" href="https://twitter.com/share?url=http://www.maplesotho.com/blog/2016/02/18/analysing-osm-data-for-planning-purposes-not-so-easy/">Twitter</a>
+
+	<a class="icon facebook" href="http://facebook.com/sharer.php?u=http://www.maplesotho.com/blog/2016/02/18/analysing-osm-data-for-planning-purposes-not-so-easy/">Facebook</a>
+	
+	<a class="icon all" href="/blog/2016/02/17/mapillary-sessions/">All</a>
+  
+  <a class="icon prev " href="/blog/2016/02/17/mapillary-sessions/">Previous</a>
+
+  <a class="icon next " href="/blog/2016/02/20/3-d-mapping-for-lesotho/"> Next</a>
+  
+
+</div>
+
+<script type="text/javascript" src="/assets/scripts/jquery.simulate.min.js"></script>
+<script type="text/javascript">
+$(document.documentElement).keyup(function (e) {
+  if (e.keyCode == 39)
+  {
+    $( "a.home-next,li.next a,a.next" ).simulate( "click" );
+  }
+  if (e.keyCode == 37)
+  {
+    $( "a.home-prev,li.prev a,a.prev" ).simulate( "click" );
+  }
+});
+</script>
+
+  
+  <div class="p4y fill-blue dark center line-bottom">
+<div class="wrapper">
+	<div class="p8x">
+		<h2>Keep in touch </h2>
+		<a href="https://www.facebook.com/groups/1539200169678837/?fref=nf" class="button icon facebook">Facebook</a> 
+		<a href="https://twitter.com/search?q=%23MapLesotho&src=typd" class="button icon twitter">#MapLesotho</a> 
+		<a href="http://wiki.openstreetmap.org/wiki/WikiProject_Lesotho" class="button icon twitter">OSM Wiki</a> 
+	</div>
+</div>
+</div>
+
+<footer class="p4y fill-lightgrey" >
+    <div class="wrapper">
+    	<div class="p8x">
+    		<p>Made with love by <a href="https://cbroderick.me" title="Visit Colin Brodericks website">Colin Broderick</a> and <a href="http://fingal.ie/" title="Visit the Fingal County Council website">Fingal</a>, inspired by Development Seed and HotOSM.</p>
+    	</div>
+    </div>
+</footer>
+
+<!-- Get Gauges -->
+<script type="text/javascript">
+  var _gauges = _gauges || [];
+  (function() {
+    var t   = document.createElement('script');
+    t.type  = 'text/javascript';
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '57c1d417c88d90366d024be9');
+    t.setAttribute('data-track-path', 'https://track.gaug.es/track.gif');
+    t.src = 'https://d36ee2fcip1434.cloudfront.net/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
+</script>
+
+  <style type="text/css">
+  	.item {min-height: 260px;}
+  </style>
+
+  
+
+  </body>
+</html>
