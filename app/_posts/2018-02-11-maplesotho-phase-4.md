@@ -2,7 +2,7 @@
 layout: post
 type: post
 published: 'true'
-title: '#MapLesotho phase 4'
+title: '#MapLesotho phase 4 (part 1)'
 categories: '#OSM #MapLesotho #Mapillary'
 tags:
   - '#OSM #MapLesotho #Mapillary'
