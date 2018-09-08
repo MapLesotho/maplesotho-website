@@ -7,6 +7,11 @@ backend:
 media_folder: "app/assets/graphics/uploads"
 public_folder: "/assets/graphics/uploads"
 
+media_library:
+  name: uploadcare
+  config:
+    publicKey: 71d7eed45b3b8b58681f
+
 
 collections: # A list of collections the CMS should be able to edit
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
